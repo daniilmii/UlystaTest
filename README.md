@@ -12,8 +12,9 @@ which will have 2 characters '|' in the line and the order is violated, then I b
 The redesigned algorithm parses each digit separately.
 1) We reach the whitespace in the first of 4 lines
 2) At the same index, we look at the characters in 3 other lines,
-     - If there is a whitespace everywhere,
-          then we select substrings by this index
-          remove trailing spaces
-
+    - If there is a space character everywhere,
+           then we select substrings by this index
+           remove trailing spaces
+    - If somewhere it is not a whitespace yet,
+	then move the index further so that in each line at this index there is a whitespace symbol
 Thus, we get a substring by which we can determine what kind of digit we have
