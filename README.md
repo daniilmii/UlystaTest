@@ -1,7 +1,11 @@
 # UlystaTest
 ParsingFile
 
+12.02.2021 21:40 UPDATE
+Algorithm totaly compeleted
 
+
+12.02.2021 15:09
 The algorithm is not fully completed and I did not even start to bring the code back to normal.
 I tried to have time to show exactly which parsing algorithm I used.
 
@@ -18,3 +22,5 @@ The redesigned algorithm parses each digit separately.
     - If somewhere it is not a whitespace yet,
 	then move the index further so that in each line at this index there is a whitespace symbol
 Thus, we get a substring by which we can determine what kind of digit we have
+
+
