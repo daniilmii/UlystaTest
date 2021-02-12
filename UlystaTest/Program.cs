@@ -23,7 +23,7 @@ namespace UlystaTest
                     {
                         Console.Write("3");
                     }
-                    else if (line1 == "|")
+                    else if (line1 == "_|")
                     {
                         Console.Write("2");
                     }
@@ -75,11 +75,10 @@ namespace UlystaTest
                 rowsInternal[3] = sr.ReadLine();
 
 
-
                 int xDelimiterIndex = 0;
                 int yDelimiterIndex = 0;
 
-                
+
                 while (yDelimiterIndex != rowsInternal[0].Length)
                 {
 
@@ -115,14 +114,14 @@ namespace UlystaTest
 
                     DigitEntity entity = new DigitEntity();
 
-                    for (int i = 0; i < 4; i++)
+                    for (int a = 0; a < 4; a++)
                     {
-                        entity.digit[i] = rowsInternal[i].Substring(xDelimiterIndex, yDelimiterIndex);
+                        entity.digit[a] = rowsInternal[a].Substring(xDelimiterIndex, yDelimiterIndex - xDelimiterIndex);
                     }
 
                     DigitsProcessor(entity);
                     xDelimiterIndex = yDelimiterIndex;
-                    
+
                 }
 
             }
